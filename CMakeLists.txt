@@ -3,4 +3,4 @@ project(zz)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(zz vec.h main.cpp)
+add_executable(zz vec.h string.h queue.h main.cpp)

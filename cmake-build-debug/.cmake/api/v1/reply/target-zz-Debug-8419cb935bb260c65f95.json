@@ -55,7 +55,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				1
+				3
 			]
 		}
 	],
@@ -92,14 +92,16 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				1
+				3
 			]
 		}
 	],
@@ -108,6 +110,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "vec.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "queue.h",
 			"sourceGroupIndex" : 0
 		},
 		{

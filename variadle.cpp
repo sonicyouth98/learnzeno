@@ -32,10 +32,7 @@ void print_impl(const T &t) {
     std::cout << t << '\n';
 }
 
-tempalte<typename... T>
-void print_impl(const T& ... t) {
 
-}
 int main() {
     const auto Vec = to_string(1, "abc", 6.4);
     for (auto c : Vec) {

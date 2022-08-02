@@ -41,40 +41,40 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\Users\admin\Desktop\zz\cmake-build-debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target zz
+# Object build statements for EXECUTABLE target var
 
 
 #############################################
-# Order-only phony target for zz
+# Order-only phony target for var
 
-build cmake_object_order_depends_target_zz: phony || CMakeFiles\zz.dir
+build cmake_object_order_depends_target_var: phony || CMakeFiles\var.dir
 
-build CMakeFiles\zz.dir\main.cpp.obj: CXX_COMPILER__zz_Debug C$:\Users\admin\Desktop\zz\main.cpp || cmake_object_order_depends_target_zz
+build CMakeFiles\var.dir\variadle.cpp.obj: CXX_COMPILER__var_Debug C$:\Users\admin\Desktop\zz\variadle.cpp || cmake_object_order_depends_target_var
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++latest
-  OBJECT_DIR = CMakeFiles\zz.dir
-  OBJECT_FILE_DIR = CMakeFiles\zz.dir
-  TARGET_COMPILE_PDB = CMakeFiles\zz.dir\
-  TARGET_PDB = zz.pdb
+  OBJECT_DIR = CMakeFiles\var.dir
+  OBJECT_FILE_DIR = CMakeFiles\var.dir
+  TARGET_COMPILE_PDB = CMakeFiles\var.dir\
+  TARGET_PDB = var.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target zz
+# Link build statements for EXECUTABLE target var
 
 
 #############################################
-# Link the executable zz.exe
+# Link the executable var.exe
 
-build zz.exe: CXX_EXECUTABLE_LINKER__zz_Debug CMakeFiles\zz.dir\main.cpp.obj
+build var.exe: CXX_EXECUTABLE_LINKER__var_Debug CMakeFiles\var.dir\variadle.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\zz.dir
+  OBJECT_DIR = CMakeFiles\var.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\zz.dir\
-  TARGET_FILE = zz.exe
-  TARGET_IMPLIB = zz.lib
-  TARGET_PDB = zz.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\var.dir\
+  TARGET_FILE = var.exe
+  TARGET_IMPLIB = var.lib
+  TARGET_PDB = var.pdb
 
 
 #############################################
@@ -102,7 +102,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build zz: phony zz.exe
+build var: phony var.exe
 
 # =============================================================================
 # Folder targets.
@@ -112,7 +112,7 @@ build zz: phony zz.exe
 #############################################
 # Folder: C:/Users/admin/Desktop/zz/cmake-build-debug
 
-build all: phony zz.exe
+build all: phony var.exe
 
 # =============================================================================
 # Built-in targets

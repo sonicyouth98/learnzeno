@@ -1,3 +1,5 @@
 # ninja log v5
 0	963	6804101959764920	CMakeFiles/zz.dir/main.cpp.obj	b2a9146f95bcad36
 964	1107	6804101960968539	zz.exe	b5a1ec277a00afaf
+0	1396	6811091574165394	CMakeFiles/var.dir/variadle.cpp.obj	32c4eb6029b2be0b
+1397	1938	6811091579530784	var.exe	e72a601cf6b7f99c

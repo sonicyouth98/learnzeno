@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "zz.exe"
+			"path" : "var.exe"
 		},
 		{
-			"path" : "zz.pdb"
+			"path" : "var.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -55,11 +55,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				3
+				0
 			]
 		}
 	],
-	"id" : "zz::@6890427a1f51a3e7e1df",
+	"id" : "var::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "zz",
-	"nameOnDisk" : "zz.exe",
+	"name" : "var",
+	"nameOnDisk" : "var.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -89,19 +89,10 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				0,
-				1,
-				2
-			]
-		},
-		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				3
+				0
 			]
 		}
 	],
@@ -109,24 +100,9 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "vec.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "string.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "queue.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
-			"sourceGroupIndex" : 1
+			"path" : "variadle.cpp",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

@@ -48,5 +48,5 @@ void Matrix<T>::cleanup() {
 template<typename T>
 Matrix<T> ::~Matrix() {
    cleanup();
-}        
+}
 

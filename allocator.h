@@ -7,7 +7,7 @@
 #include <mutex>
 #include <unordered_map>
 #include <utility>
-#include <cuda_runtime_api.h>
+
 
 //标记内存分配类型
 enum class MatMemorySpace_t {

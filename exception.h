@@ -9,6 +9,7 @@
 #include <random>
 #include <list>
 
+/*
 enum class ExceptionCode {
 
 };
@@ -27,4 +28,15 @@ public:
     }
 
 
+};
+
+*/
+
+class ExceptionImpl : std::exception {
+public:
+    std::string msg_;
+
+    const char* what() const throw() override {
+        return msg_.c_str();
+    }
 };

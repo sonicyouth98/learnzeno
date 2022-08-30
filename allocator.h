@@ -8,7 +8,7 @@
 #include <unordered_map>
 #include <utility>
 
-
+//类似于统一host于device的内存分配
 //标记内存分配类型
 enum class MatMemorySpace_t {
 
@@ -26,4 +26,51 @@ struct MatPointerAttr_t {
 
 };
 
+inline std::shared_mutex memory_mtx;
+std::unordered_map<void *, MatPointerAttr_t> allocationMap;
+inline bool IsAllocated(void *ptr) {
+    if (ptr == nullptr) {
+        return false;
+    }
 
+    std::unique_lock<std::shared_mutex> lck(memory_mtx);
+    auto it = allocationMap.find(ptr);
+    return it != allocationMap.end();
+}
+
+inline MatMemoryStats_t GetPointerKind(void *ptr) {
+    if (ptr == nullptr) {
+        //
+    }
+
+    //上锁
+}
+
+//打印内存信息到屏幕上
+inline void matPrintMemoryStatistics() {
+    
+}
+
+//分配内存
+inline void matMalloc(void **ptr, size_t bytes = 0) {
+
+}
+inline void maxFree(void *ptr) {
+    if (ptr == nullptr) {
+        return ;
+    }
+
+
+}
+template<typename T>
+struct mat_allocator {
+    inline T *allocate(size_t size) {
+        T *tmp;
+        //调用自定义分配函数
+        return tmp;
+    }
+
+    inline void deallocate(void *ptr, [[maybe_unused]]size_t size) {
+
+    }
+};

@@ -48,7 +48,7 @@ inline MatMemoryStats_t GetPointerKind(void *ptr) {
 
 //打印内存信息到屏幕上
 inline void matPrintMemoryStatistics() {
-    
+
 }
 
 //分配内存
@@ -74,3 +74,13 @@ struct mat_allocator {
 
     }
 };
+/*
+ * 有一种做法就是定义一个同名函数
+ * 然后再搞一个同名的模板函数
+ * 同名的模板函数调用他,这是zeno的一种设计模式
+ * */
+
+template<class T>
+std::shared_ptr<T> get_input() {
+
+}

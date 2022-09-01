@@ -7,7 +7,7 @@
 #include <mutex>
 #include <unordered_map>
 #include <utility>
-
+#include <type_traits>
 //类似于统一host于device的内存分配
 //标记内存分配类型
 enum class MatMemorySpace_t {
@@ -82,5 +82,18 @@ struct mat_allocator {
 
 template<class T>
 std::shared_ptr<T> get_input() {
+
+}
+
+class IObject;
+template<class T>
+T ObejectToLiteral(std::shared_ptr<IObject> const &ptr, const std::string &msg = "ObjectToLiteral") {
+    if constexpr(std::is_same_v<T, std::string>) {
+
+    } else if constexpr(std::is_same_v<int, T>) {
+
+    } else {
+       // return std::visit()
+    }
 
 }
